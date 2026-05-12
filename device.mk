@@ -6,6 +6,12 @@
 # Inherit from sm6225-common
 $(call inherit-product, device/motorola/sm6225-common/common.mk)
 
+# Moto Camera 2
+TARGET_MOTCAMERA2 := whitney
+TARGET_USES_MOTCAMERA2 := true
+
+$(call inherit-product, vendor/motorola/MotCamera2/motcamera2.mk)
+
 # A/B
 AB_OTA_PARTITIONS += \
     recovery
